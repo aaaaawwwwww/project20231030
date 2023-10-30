@@ -3,17 +3,18 @@ import Head from '../Head'
 import UsageMenu from './UsageMenu'
 import MenuVertical from '../MenuVertical'
 import SecContainer from './SecContainer'
-import backgroundone from '../img/backgroundone.jpg'
+import backgroundtwo from '../img/backgroundtwo.jpg'
 
 const SecPage = () => {
   return (
     <div style={{
-      backgroundImage: `url(${backgroundone})`, backgroundSize: 'cover',
-      backgroundPosition: 'center center'
+      position: 'relative',
+      backgroundImage: `url(${backgroundtwo})`, backgroundSize: 'cover',
+      backgroundPosition: 'center center', height: 'calc(100vh + auto)',
     }}>
       <Head />
       <UsageMenu />
-      <MenuVertical />
+      <MenuVertical secondpage />
       <SecContainer />
     </div>
   )

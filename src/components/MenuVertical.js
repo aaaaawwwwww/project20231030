@@ -1,9 +1,14 @@
 import React from 'react';
 
-const items = ['인기제품', '가격대별', '성능별'];
+const itemsSecond = ['인기제품', '가격대별', '성능별'];
+const itemsThird = ['커스터마이징', '호환성 검사']
 
-const style = {
-  border: '1px solid green',
+const wrapstyle = {
+  float: 'left',
+  margin: '0 0 0 30px',
+};
+
+const secondstyle = {
   textAlign: 'center',
   width: '200px',
   height: '100px',
@@ -13,17 +18,35 @@ const style = {
   margin: '40px auto',
 };
 
-const MenuVertical = () => {
-  return (
-    <div style={{
-      border: '1px solid ', float: 'left',
-      marginLeft: '40px',
-    }}>
-      {items.map((item, index) => (
-        <div key={index} style={style} >{item}</div>))
-      }
-    </div>
-  );
+const thirdstyle = {
+  textAlign: 'center',
+  width: '200px',
+  height: '100px',
+  font: '2em bold',
+  lineHeight: '100px',
+  borderRadius: '20px',
+  margin: '130px auto',
+};
+
+const MenuVertical = (props) => {
+  if (props.secondpage) {
+    return (
+      <div style={wrapstyle}>
+        {itemsSecond.map((item, index) => (
+          <div key={index} style={secondstyle} >{item}</div>))
+        }
+      </div>
+    )
+
+  } else {
+    return (
+      <div style={wrapstyle}>
+        {itemsThird.map((item, index) => (
+          <div key={index} style={thirdstyle} >{item}</div>))
+        }
+      </div>
+    )
+  }
 };
 
 export default MenuVertical;

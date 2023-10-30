@@ -41,9 +41,11 @@ const CompoList = () => {
       onClick={onClick}
       style={{
         float: 'right',
-        marginRight: '100px',
-        marginTop: '100px',
+        margin: '100px 100px 0 0',
         width: 256,
+        // background: 'transparent',
+        background: 'rgba(255, 255, 255, 0.5)',
+        borderRadius: '10px',
       }}
       defaultSelectedKeys={['a', 'e']}
       defaultOpenKeys={['main', 'etc']}

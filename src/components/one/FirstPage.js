@@ -7,8 +7,11 @@ import backgroundone from '../img/backgroundone.jpg'
 const FirstPage = () => {
   return (
     <div style={{
-      backgroundImage: `url(${backgroundone})`, backgroundSize: 'cover',
-      backgroundPosition: 'center center'
+      position: 'absolute',
+      height: '100%',
+      backgroundImage: `url(${backgroundone})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center center',
     }}>
       <Head />
       <Form />

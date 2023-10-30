@@ -5,13 +5,12 @@ import ThirdList from './ThirdList'
 const container = {
   position: 'absolute',
   bottom: '5%',
-  border: '1px dashed red',
+  margin: '20px 0 0 -100px',
   displayContent: 'center',
   width: '40%',
   height: '200px',
   justifyContent: 'center',
   left: '20%',
-  // transform: 'translate(-650px)',
 }
 
 const ThirdContainer = () => {

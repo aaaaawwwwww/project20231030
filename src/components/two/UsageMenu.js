@@ -14,7 +14,6 @@ const UsageMenu = () => (
     </style>
     <Flex wrap="wrap" gap="large"
       style={{
-        border: '2px dashed red',
         margin: '50px auto',
         width: '70%',
         alignItems: 'left',

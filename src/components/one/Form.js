@@ -1,5 +1,6 @@
 import React from 'react';
 import smartphone from '../img/smartphone.jpg';
+import event from '../img/event.jpg';
 
 function Form() {
   return (
@@ -10,7 +11,7 @@ function Form() {
       />
       <InnerForm
         context={'특가 이벤트'}
-        imgSrc={smartphone}
+        imgSrc={event}
       />
     </>
   );

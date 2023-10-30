@@ -1,5 +1,5 @@
+import { Col, Row } from 'antd';
 import React from 'react';
-import { Col, Divider, Row } from 'antd';
 
 const style = {
   width: '200px',
@@ -10,28 +10,18 @@ const style = {
   verticalAlign: 'center',
   fontSize: '1.5em',
   fontColor: 'white',
+  background: 'transparent',
+  color: 'black',
 };
-
-
-
-function PageLinker() {
-  <button type="button">
-
-  </button>
-}
-
-
 
 const App = () => (
   <>
-    <Divider orientation="center">Responsive</Divider>
     <Row style={{
       justify: 'center',
       justifyContent: 'center',
       justifyItems: 'center',
       width: '80%',
       margin: '50px 10%',
-      border: '1px solid'
     }}
       gutter={{
         xs: 0,

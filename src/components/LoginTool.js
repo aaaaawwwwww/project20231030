@@ -14,10 +14,9 @@ const LoginTool = () => (
     wrapperCol={{ span: 8, }}
     style={{
       position: 'relative',
-      left: '70%',
+      left: '80%',
       bottom: '60px',
       width: '350px',
-      border: '2px solid black',
     }}
     initialValues={{ remember: true, }}
     // onFinish={onFinish}

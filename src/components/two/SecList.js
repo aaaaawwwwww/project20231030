@@ -37,9 +37,6 @@ const SecList = () => {
         setData(newData);
         setList(newData);
         setLoading(false);
-        // Resetting window's offsetTop so as to display react-virtualized demo underfloor.
-        // In real scene, you can using public method of react-virtualized:
-        // https://stackoverflow.com/questions/46700726/how-to-use-public-method-updateposition-of-react-virtualized
         window.dispatchEvent(new Event('resize'));
       });
   };
@@ -72,7 +69,6 @@ const SecList = () => {
               description="AMD / 라이젠5-4세대 / 버미어 / 5600X (3.7GHz) / (AMD) B550 / DDR4 / 16GB / M.2 / 256GB / "
             />
             <PriceBox />
-            {/* <div>content</div> */}
           </Skeleton>
         </List.Item>
       )}

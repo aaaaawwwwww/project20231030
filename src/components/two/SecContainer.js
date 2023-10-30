@@ -4,12 +4,10 @@ import SecList from './SecList';
 
 const container = {
   display: 'inline-block',
-  border: '2px dashed gray',
-  marginLeft: '50px',
+  margin: '0 0 0 50px',
   width: '70%',
   height: 'auto',
-  paddingTop: '30px',
-  paddingLeft: '10px',
+  padding: '30px 0 0 10px',
 }
 
 

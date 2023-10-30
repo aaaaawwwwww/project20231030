@@ -14,6 +14,7 @@ const ThirdList = () => {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
   const [list, setList] = useState([]);
+
   useEffect(() => {
     fetch(fakeDataUrl)
       .then((res) => res.json())
@@ -23,6 +24,7 @@ const ThirdList = () => {
         setList(res.results);
       });
   }, []);
+
   const onLoadMore = () => {
     setLoading(true);
     setList(
@@ -64,15 +66,16 @@ const ThirdList = () => {
       itemLayout="horizontal"
       loadMore={loadMore}
       dataSource={list}
-      renderItem={(item) => (
-        <List.Item style={{}}>
+      renderItem={(item, index) => (
+        <List.Item >
           <Skeleton avatar title={false} loading={item.loading} active>
             <List.Item.Meta
               avatar={<Avatar src={item.picture.large} />}
               title={<a href="https://ant.design">{item.name?.last}</a>}
               description="인텔 CORE i5 - 13400F(랩터레이크)"
             />
-            <button type='button' style={buttonStyle}>구성에 추가</button>
+            <button type='button' style={buttonStyle}>
+              구성에 추가</button>
           </Skeleton>
         </List.Item>
       )}

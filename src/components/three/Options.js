@@ -13,14 +13,14 @@ const st_category = {
 const st_element = {
   display: 'inline-block',
   backgroundColor: 'lightgray',
-  marginLeft: '3px',
+  margin: '0 0 0 3px',
   borderRadius: '5px',
   padding: '5px',
 }
 
 const st_check = {
   display: 'inline-block',
-  marginLeft: '30px',
+  margin: '0 0 0 30px',
 }
 
 const soket = ['(인텔) 소켓 1700', '(인텔) 소켓 1500', '(인텔) 소켓 1200', '(인텔) 소켓 2066',];
@@ -36,7 +36,10 @@ function Customs(props) {
       <span style={{ ...st_category, display: 'inline-block' }}>{props.category}</span>
       <div style={{ display: 'inline-block' }}>
         {props.array.map((item, index) => (
-          <div key={index} style={{ display: 'inline-block', marginLeft: '10px' }}>
+          <div key={index} style={{
+            display: 'inline-block',
+            margin: '0 0 0 10px'
+          }}>
             <input type='checkbox' style={st_check} />
             <span style={st_element}>{item}</span>
           </div>
@@ -50,19 +53,18 @@ const Options = () => {
   return (
     <div style={{
       float: 'left',
-      margin: '30px 50px',
-      border: '2px dotted black',
+      margin: '30px 50px 250px 50px',
       width: '55%',
       height: 'auto',
     }}>
       <span style={st_category}>제조사</span>
       <select style={{
         display: 'inline-block',
-        marginLeft: '40px',
+        margin: '0 0 0 40px',
         width: '100px',
         height: '30px',
       }}>
-        <option selected>인텔</option>
+        <option defaultValue={'인텔'}>인텔</option>
         <option >AMD</option>
       </select>
       <Customs array={soket} category='소켓 구분' />
